@@ -1,8 +1,8 @@
 <?php
-define('DB_SERVER','localhost');
-define('DB_USER','root');
-define('DB_PASS' ,'');
-define('DB_NAME', 'hrmodule');
+define('DB_SERVER','remotemysql.com');
+define('DB_USER','wkqgOIzEHy');
+define('DB_PASS' ,'v695L71jtf');
+define('DB_NAME', 'wkqgOIzEHy');
 $con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
 
 
