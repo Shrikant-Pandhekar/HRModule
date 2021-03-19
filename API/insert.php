@@ -14,8 +14,12 @@ if($password == 'vatantexttile@2021')
      }
      else
      {
+         echo mysqli_error($con)."<br>";
          echo "failed";
      }
+}
+else{
+    echo "invalid password";
 }
 
 
