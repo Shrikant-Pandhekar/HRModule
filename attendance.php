@@ -89,7 +89,7 @@ else{
                                             
 
                                             
-                                            $query = "SELECT time FROM dummy_data WHERE emp_id= '$id' AND date='$date' ORDER BY time";
+                                            $query = "SELECT time FROM attendance WHERE emp_id= '$id' AND date='$date' ORDER BY time";
                                             $result = mysqli_query($con,$query);
                                             $total_rows = mysqli_num_rows($result);
                                             // echo $total_rows;
