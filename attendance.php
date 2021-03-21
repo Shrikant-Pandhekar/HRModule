@@ -101,6 +101,7 @@ else{
                                                 $time_array[$i] = $row["time"];
                                                 //   echo $i." - ".$row["time"]."<br>";
                                             }
+                                            
                                             // print_r($time_array);
                                         ?> 
                             <tr>
@@ -111,7 +112,10 @@ else{
                             <td><?php echo $date?></td>
                             <td><a href="Test.php?mid=<?php echo date("m",strtotime($date));?>&sid=<?php echo $id;?>&yid=<?php echo date("Y",strtotime($date)) ?>"><button>View</button></a></td>
                             </tr>
-                            <?php } } } } ?>
+                            <?php }
+                          else{
+                            echo "No records <br>";
+                          } } } } ?>
                         </tbody>
                         
                         </table>
