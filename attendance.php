@@ -20,7 +20,7 @@ else{
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Salary management</title>
+    <title>View Attendance</title>
 
     <!-- Custom fonts for this template-->
 
@@ -39,22 +39,27 @@ else{
 
 </head>
 
-    <body id="page-top" style="overflow:hidden">
+    <body id="page-top">
         <div class="wrapper">
             <?php include("navbar.php");?>
-       
+        </div>
                  <!-- Begin Page Content -->
-                <div class="container-fluid" style="margin-top: 100px;margin-left: 300px;width:100%">
+                <div class="container" style="margin-top: 100px;margin-left: 300px;width:100%">
                         <?php include('connect.php');?>
                         <h3>Attendance</h3>
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                        <br><br>
+                        
                         <form action="" method="post" id="my-form1">
-                                    <div class="form-group"><br><br>
+                                    <div class="form-group">
                                         <label for="name">Date:</label>
-                                        <input type="date" id="date" name="date"  >
-                                        <button type="submit" class="btn btn-primary align-right" name="btn" value="check">Check</button>
+                                        <input type="date" class="form-control" id="date" name="date" style="width:50%"><br>
+                                        <button type="submit" class="btn btn-primary align-right" name="btn" value="check">Check</button><br>
                                     </div>
-
+                              <div class="form-group">
+                                    <label for="name">Employee ID:</label>
+                                    <input type="text" id="myInput" class="form-control" onkeyup="myFunction()" placeholder="To check for specific employee enter employee ID" style="width:50%">
+                            </div>
+                            
                         </form>
                         
                         <div class="table-responsive">
@@ -122,7 +127,7 @@ else{
                         </div>
                 </div>
 
-         </div>
+         
                     
 
 
