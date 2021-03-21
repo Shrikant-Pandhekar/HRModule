@@ -7,7 +7,7 @@ $time = $_POST['time'];
 
 if($password == 'vatantexttile@2021')
 {
-     $query=mysqli_query($con,"insert into attendance (eid, date, time) values ('$eid', '$date', '$time')");
+     $query=mysqli_query($con,"insert into attendance (emp_id, date, time) values ('$eid', '$date', '$time')");
      if($query)
      {
          echo "done";
