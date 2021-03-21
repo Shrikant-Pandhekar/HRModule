@@ -1,8 +1,8 @@
 <?php
 define('DB_SERVER','remotemysql.com');
-define('DB_USER','wkqgOIzEHy');
-define('DB_PASS' ,'wFiOGCJgsP');
-define('DB_NAME', 'wkqgOIzEHy');
+define('DB_USER','fzPexkCNFV');
+define('DB_PASS' ,'3Yu8IYAx31');
+define('DB_NAME', 'fzPexkCNFV');
 $con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
 
 
