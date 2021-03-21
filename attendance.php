@@ -10,7 +10,7 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html lang="en" style="overflow:scroll;">
+<html lang="en">
 
 <head>
 
