@@ -9,7 +9,7 @@
 <body>
     <table>
     <thead>
-    <td>eid</td>
+    <td>emp_id</td>
     <td>date</td>
     <td>time</td>
     </thead>
@@ -19,7 +19,7 @@
     $query = "select * from attendance";
     $result = mysqli_query($con, $query);
     while($row = mysqli_fetch_assoc($result)){
-        echo "<tr><td>".$row["eid"]."</td><td>".$row["date"]."</td><td>".$row["time"]."</td></tr>";
+        echo "<tr><td>".$row["emp_id"]."</td><td>".$row["date"]."</td><td>".$row["time"]."</td></tr>";
     }
     ?>
     </tbody>
